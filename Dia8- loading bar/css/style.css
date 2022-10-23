@@ -16,8 +16,8 @@ body, main{
   transition:background 0.4s linear;
 
 }
-main{
-  cursor: pointer;
+h3{
+  margin-top: 40px;
 }
 label{
   font-size:30px;
@@ -28,21 +28,33 @@ label{
   position: relative;
   border: 2px solid #333;
   width:500px;
-  height:40px;
-  border-radius: 20px; 
+  height:30px;
+ 
+display: flex;
+justify-content:center;
+align-items:center;
+
+font-size:14px;
+font-weight:600
+  
+}
+p{
+  opacity:1;
+  transition: 0.9s;
 }
 .loadingBar::after{
  position:absolute; 
  content: "";
   background: #333;
-  width:10%;
-  height:40px;
-  border-radius:20px;
+  width:0%;
+  height:30px;
   top: -2px;
   left: 0px;
-  transition: width 0.3s;
+  transition: width 3s;
 }
-
-main:hover .loadingBar::after{
-
+.loadingBar:hover p{
+  opacity: 0;
+}
+.loadingBar:hover::after{
+width:100%;
 }
