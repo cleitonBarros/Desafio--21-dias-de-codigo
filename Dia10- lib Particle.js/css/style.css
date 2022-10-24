@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@300;400;500;600;700&display=swap');
+/*reset*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif Telugu', serif;
+}
+body{
+    background-color: black;
+    height: 100vh
+}
+h1{
+    color: snow;
+    font-size:22px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:40vh;
+    text-shadow:  0 0 10px rgba(255,255,255,0.35);
+}
+#particles-js{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+   
+}
