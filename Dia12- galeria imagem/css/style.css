@@ -7,3 +7,35 @@
     box-sizing: border-box;
     font-family: 'Noto Serif Telugu', serif;
 }
+html, body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.title{
+    margin: 10px 10px ;
+    text-align: center;
+
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+.container img {
+    object-fit: cover;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    transition:  1s ease;
+ 
+}
+.container img:hover {
+    transform: scale(0.9);
+    border-radius: 25%
+}
